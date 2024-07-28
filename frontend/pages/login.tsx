@@ -1,15 +1,17 @@
 /** @format */
+
 import {FaFacebookF, FaLinkedin, FaGoogle, FaRegEnvelope} from 'react-icons/fa';
 import {MdLockOutline} from 'react-icons/md';
 import React from "react";
-import "../css/login.css";
+
 import Link from 'next/link';
 
 function login() {
   return (
     
-    <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center min-h-screen bg-gray-200">
+    <main className="flex flex-col items-center justify-center flex-1 w-full min-h-screen px-20 text-center bg-gray-200">
       <div className="flex w-2/3 max-w-4xl bg-white shadow-2xl rounded-2xl">
+      <h1 className='as'>Asad</h1>
         <div className="w-3/5 p-5">
         <h2 className="mb-1 text-2xl font-bold text-blue-500 pt-14">Sign in to Account</h2>
         <div className="inline-block w-10 mb-2 border-2 border-blue-500"></div>

@@ -1,6 +1,6 @@
 /** @format */
 
-import {FaFacebookF, FaLinkedinIn, FaGoogle} from 'react-icons/fa';
+
 import Image from "next/image";
 import { Inter } from "next/font/google";
 

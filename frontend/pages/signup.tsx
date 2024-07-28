@@ -12,9 +12,9 @@ import Link from "next/link";
 
 function signup() {
   return (
-    <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center min-h-screen bg-gray-200">
-      <div className="flex  w-2/3 max-w-4xl rounded-2xl shadow-2xl bg-white">
-        <div className="w-2/5 text-white bg-blue-500 py-36 px-12 rounded-tl-2xl rounded-bl-2xl">
+    <main className="flex flex-col items-center justify-center flex-1 w-full min-h-screen px-20 text-center bg-gray-200">
+      <div className="flex w-2/3 max-w-4xl bg-white shadow-2xl rounded-2xl">
+        <div className="w-2/5 px-12 text-white bg-blue-500 py-36 rounded-tl-2xl rounded-bl-2xl">
           <h2 className="mb-1 text-2xl font-bold">Hello, Friends!</h2>
           <div className="inline-block w-10 mb-2 border-2 border-white"></div>
           <p className="mb-10">
