@@ -5,7 +5,7 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        background: #353535;
+        background: #041836;
     
     }
     
@@ -56,6 +56,12 @@
             font-family: 'Gill Sans MT', sans-serif;
             color: antiquewhite;
         }
+        .line{
+            border: 3px solid antiquewhite;
+            width: 30px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+          }
         .input_field{
             width: 80%;
             height: 40px;
@@ -91,7 +97,7 @@
             width: 150px;
             height: 45px;
             border: none;
-            background: #353535;
+            background: #041836;
             color: #4ea3ee;
             font-weight: 600;
             font-size: 1em;
@@ -126,7 +132,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #444;
+            background: #041836;
             color: #4ea3ee;
             border: 2px solid #4ea3ee;
             border-radius: 50px;
@@ -148,7 +154,7 @@
         min-width: 238px;
         height: auto;
         z-index: 6;
-        padding: 30px 10px;
+        padding: 30px 60px;
         text-align: center;
         overflow: hidden;
 
@@ -186,7 +192,7 @@
             width: 150px;
             height: 45px;
             border: none;
-            background: #353535;
+            background: #041836;
             color: #4ea3ee;
             font-weight: 600;
             font-size: 1em;

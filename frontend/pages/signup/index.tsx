@@ -19,7 +19,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const signup_ui = () => {
-  // State to manage the sign-up mode
+  // State to manage the sign-up mod
   // const [isSignUpMode, setIsSignUpMode] = useState(false);
 
   // Handlers for sign-in and sign-up buttons
@@ -38,10 +38,9 @@ const signup_ui = () => {
           <div className={`${v.wrapped_item}`}>
           <div className={`${v.left_panel}`}>
             <div className={`${v.content}`}>
-              <h3 className={`${v.panel_title}`}>Member of Brand?</h3>
+              <h3 className={`${v.panel_title}`}>Welcome Back</h3>
               <p className={`${v.panel_text}`}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                ab nobis at nostrum, reiciendis quae.
+                To keep connected with us please login with your personal info
               </p>
               <Link href="/signin" className={`${v.btn}`}>
                 Sign in
@@ -56,7 +55,8 @@ const signup_ui = () => {
           </div>
             {/* Signin form start */}
             <form action="" className={`${v.sign_up_form}`}>
-              <h2 className={`${v.title}`}>Sign up</h2>
+              <h2 className={`${v.title}`}>Create Account</h2>
+              <div className={`${v.line}`}></div>
               <div className={`${v.input_field}`}>
                 <FaUser className={`${v.fa}`} />
                 <input

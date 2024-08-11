@@ -33,8 +33,9 @@ const signin_ui = () => {
                     {/* Signin form start */}
                     <form action="" className={`${v.sign_in_form}`}>
                         <h2 className={`${v.title}`}>
-                            Sign in
+                            Login
                         </h2>
+                        <div className={`${v.line}`}></div>
                         <div className={`${v.input_field}`}>
                             <FaUser  className={`${v.fa}`}/>
                             <input className={`${v.inputs}`}  type="text" name="username" id="username" placeholder="Username" />
@@ -70,8 +71,8 @@ const signin_ui = () => {
                     {/* Signin form end */}
                       <div className={`${v.right_panel}`}>
                         <div className={`${v.content}`}>
-                            <h3 className={`${v.panel_title}`}>New to Brand?</h3>
-                            <p className={`${v.panel_text}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nobis at nostrum, reiciendis quae.</p>
+                            <h3 className={`${v.panel_title}`}>Hello, Friend!</h3>
+                            <p className={`${v.panel_text}`}>Enter your personal datails and start journey with us </p>
                             <Link href="/signup" className={`${v.btn}`}>Sign up</Link>
                         </div>
                         <Image src={signup_img} alt={"sign_up"} className={`${v.img}`} />
