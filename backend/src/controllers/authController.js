@@ -8,21 +8,17 @@ const User = require('../entity/User');
 const signup = async (req,res) =>{
     let {username,email,password} =req.body;
 
-    console.log(username,email,password);
     if (!username || !email || !password) {
         return res.status(400).json({message:'Empty fields'});
     }
     const userRepository = getRepository(User);
     try{
-        console.log("this is working");
         
         const userexist = await userRepository.findOne({ where: { email } });
         if(userexist){
             return res.status(400).json({ message: 'Email already in use' }); 
         }
-        console.log("this is working2");
         const hashedPassword = await bcrypt.hash(password,10);
-        console.log("hhhh"+hashedPassword);
         const newUser = userRepository.create({ username, email, password: hashedPassword });
         await userRepository.save(newUser);
         console.log("User has been saved.");
@@ -38,7 +34,6 @@ const signup = async (req,res) =>{
 
 const login = async (req, res) => {
   const { email, password } = req.body;
-console.log(email);
   if (!email || !password) {
     return res.status(400).json({ message: 'Email and password are required' });
   }
