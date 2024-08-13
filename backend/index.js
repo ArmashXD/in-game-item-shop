@@ -1,7 +1,7 @@
-
 const express = require('express');
 const { connectDatabase } = require('./src/config/database');
-const authRoutes = require('./src/routes/authRoutes');
+const Routes = require('./src/routes/Routes');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
@@ -10,7 +10,7 @@ app.use(express.json());
 connectDatabase();
 
 // Use routes
-app.use('/auth', authRoutes);
+app.use('/api', Routes);
 
 // Start server
 app.listen(3000, () => {
