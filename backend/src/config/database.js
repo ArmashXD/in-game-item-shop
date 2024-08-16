@@ -4,15 +4,16 @@ const User = require('../entity/User');
 const connectDatabase = async () => {
   try {
     await createConnection({
-      type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: '',
-      database: 'user_db',
+
+      type: 'postgres',
+      host: 'localhost', 
+      port: 5432, 
+      username: 'postgres', 
+      password: '12345', 
+      database: 'user_db', 
       entities: [User],
-      synchronize: true,
-      logging: false,
+      synchronize: true, 
+       logging: false,
     });
     console.log('Database connected');
   } catch (error) {
