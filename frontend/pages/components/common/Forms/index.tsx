@@ -13,7 +13,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-const Form = ({heading,btn,socialText,isSignup,linkText}:{heading:string,btn:string,socialText:string,isSignup:boolean,linkText:string}) => {
+const Form = ({heading,btn,socialText,isSignup,linkText,href,link}:{heading:string,btn:string,socialText:string,isSignup:boolean,linkText:string,href:string,link:string}) => {
   return (
     <form
       action=""
@@ -58,11 +58,11 @@ const Form = ({heading,btn,socialText,isSignup,linkText}:{heading:string,btn:str
         <SocialMediaIcon Icon={<FaGoogle />} />
         <SocialMediaIcon Icon={<FaLinkedin />} />
       </div>
-      <p className='text-center mt-4 text-lg'>
+      <p className='text-center mt-4 text-lg hidden md-max:block'>
         {linkText}
         
-        <Link href="/signup" className="text-[#4ea3ee] ml-2  hover:text-white">
-          Sign up
+        <Link href={href} className="text-[#4ea3ee] ml-2  hover:text-white ">
+          {link}
         </Link>
       </p>
     </form>

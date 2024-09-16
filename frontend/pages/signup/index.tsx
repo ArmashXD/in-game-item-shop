@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Form from "../components/common/Forms"
 import Panel from "../components/Panel";
-import { signupHeading, signupText, socialText } from "@/utils/mock";
+import { signinlinkText, signupHeading, signupText, socialText } from "@/utils/mock";
 
 
 
@@ -20,7 +20,7 @@ const Signup = () => {
             
             <Panel heading={signupHeading} text={signupText} href="/login" linkText="Sign In" src={signup_img}/>
             {/* Signup form start  */}
-            <Form isSignup heading="Sign Up" btn="Sign up" socialText={socialText}/>
+            <Form isSignup heading="Sign Up" btn="Sign up" socialText={socialText} linkText={signinlinkText} href="/signup" link="Sign In"/>
 
           </div>
         </div>
